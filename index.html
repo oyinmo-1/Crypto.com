@@ -196,8 +196,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   const email = document.getElementById("email").value;
   const message = document.getElementById("message").value;
   const text = `📩 New Support Message:\n\n👤 Name: ${name}\n📧 Email: ${email}\n📝 Message: ${message}`;
-  const botToken = "7392109583:AAGVd0PU8VlkbaI7KGx-23FN2PvaKJ2q0qk
-" ; // REPLACE
+  const botToken = "7392109583:AAGVd0PU8VlkbaI7KGx-23FN2PvaKJ2q0qk" ; // REPLACE
   const chatId = "7884374296";     // REPLACE
 
   fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
